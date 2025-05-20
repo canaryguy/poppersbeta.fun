@@ -29,6 +29,7 @@ export const RotatingSlogan = () => {
 
   return (
     <div className="h-12 text-center">
+      <div>TEST: RotatingSlogan is rendering</div>
       <AnimatePresence mode="wait">
         <motion.div
           key={currentIndex}
