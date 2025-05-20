@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
   "dependencies": {
     "canvas-confetti": "^1.9.3",
     "framer-motion": "^12.12.1",
