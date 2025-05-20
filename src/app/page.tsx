@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { RotatingSlogan } from '@/components/RotatingSlogan';
+import { RotatingSlogan } from '../components/RotatingSlogan';
 import { motion } from 'framer-motion';
 
 export default function Home() {
