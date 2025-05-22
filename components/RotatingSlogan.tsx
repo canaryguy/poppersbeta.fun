@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import confetti from 'canvas-confetti';
+import type { CreateTypes } from 'canvas-confetti';
 
 const slogans = [
   "Not a launchpad. A launch party. 🧨",
@@ -17,11 +18,12 @@ export const RotatingSlogan = () => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % slogans.length);
       // Trigger confetti on slogan change
-      confetti({
+      const confettiOptions: confetti.Options = {
         particleCount: 100,
         spread: 70,
         origin: { y: 0.6 }
-      });
+      };
+      confetti(confettiOptions);
     }, 4000);
 
     return () => clearInterval(interval);
